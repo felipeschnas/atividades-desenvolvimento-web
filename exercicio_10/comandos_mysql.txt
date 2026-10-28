@@ -1,36 +1,27 @@
--- Exercício 10 - MySQL
+create database escola;
+use escola;
 
--- Criar a base de dados
-CREATE DATABASE escola;
-USE escola;
-
--- Criar a tabela
-CREATE TABLE alunos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100),
-    idade INT
+create table alunos (
+  id int auto_increment primary key,
+  nome varchar(100),
+  email varchar(100),
+  idade int
 );
 
--- Inserir dados
-INSERT INTO alunos (nome, email, idade) VALUES ('Ana Souza', 'ana@email.com', 20);
-INSERT INTO alunos (nome, email, idade) VALUES ('Bruno Lima', 'bruno@email.com', 22);
-INSERT INTO alunos (nome, email, idade) VALUES ('Carla Mendes', 'carla@email.com', 19);
+insert into alunos (nome, email, idade) values ('Joao', 'joao@gmail.com', 20);
+insert into alunos (nome, email, idade) values ('Maria', 'maria@gmail.com', 22);
+insert into alunos (nome, email, idade) values ('Pedro', 'pedro@gmail.com', 19);
 
--- Visualizar dados
-SELECT * FROM alunos;
+select * from alunos;
 
--- Alterar dados
-UPDATE alunos SET idade = 21 WHERE id = 1;
-UPDATE alunos SET email = 'bruno.lima@email.com' WHERE nome = 'Bruno Lima';
-SELECT * FROM alunos;
+update alunos set idade = 21 where id = 1;
 
--- Apagar dados
-DELETE FROM alunos WHERE id = 3;
-SELECT * FROM alunos;
+select * from alunos;
 
--- Apagar tabela
-DROP TABLE alunos;
+delete from alunos where id = 3;
 
--- Apagar base de dados
-DROP DATABASE escola;
+select * from alunos;
+
+drop table alunos;
+
+drop database escola;
