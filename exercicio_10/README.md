@@ -1,0 +1,11 @@
+MYSQL - Exercício do último slide:
+- Criar uma base de dados;
+- Criar pelo menos uma tabela com pelo menos 3 campos;
+- Executar comandos para:
+  - Inserir dados;
+  - Alterar dados;
+  - Visualizar dados;
+  - Apagar dados;
+  - Apagar tabela;
+  - Apagar base de dados;
+- Postar um arquivo txt (ou texto online) com os comandos utilizados no MYSQL.
